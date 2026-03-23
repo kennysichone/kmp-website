@@ -1,0 +1,157 @@
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #0a2540;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* PRODUCTS */
+.container {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp a {
+    text-decoration: none;
+}
+
+.whatsapp img {
+    width: 60px;
+}
+
+/* ARROW + TEXT */
+.arrow-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    text-align: center;
+    animation: bounce 1.5s infinite;
+}
+
+.arrow-box span {
+    background: #25D366;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #25D366;
+    margin: auto;
+}
+
+/* ANIMATION */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    header h1 {
+        font-size: 20px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Tech Accessories Store</h1>
+    <p>Phones & Laptop Accessories at Affordable Prices</p>
+</header>
+
+<div class="container">
+    <div class="products">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Wireless Earbuds</h3>
+            <p class="price">K350</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Phone Charger</h3>
+            <p class="price">K120</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Power Bank</h3>
+            <p class="price">K250</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Laptop Bag</h3>
+            <p class="price">K400</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>USB Flash Drive 64GB</h3>
+            <p class="price">K150</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Bluetooth Mouse</h3>
+            <p class="price">K180</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ARROW TEXT -->
+<div class="arrow-box">
+    <span>For more information</span>
+    <div class="arrow"></div>
+</div>
